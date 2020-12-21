@@ -1,0 +1,5 @@
+-Icon-icon yang saya gunakan bersumber dari:https://www.w3schools.com/icons/fontawesome_icons_intro.asp
+-Sumber Scroll Reveal:https://scrollrevealjs.org/guide/installation.html
+-Beberapa gambar yang saya gunakan:https://drive.google.com/drive/folders/14Koo06jdaVA0V6A8MklXQ7zmt9L98yBm
+-Font Poppins:https://fonts.google.com/specimen/Poppins?query=Pop
+-Referensi:https://www.youtube.com/watch?v=UnlXPMKB-wE&t=286s

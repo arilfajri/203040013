@@ -1,0 +1,522 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    padding: 100px;
+}
+
+.banner {
+    position: relative;
+    min-height: 100vh;
+    background-image: url(../assets/img/home.jpg);
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner h2 {
+    font-size: 3em;
+    color: white;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+.banner h2 span {
+    font-size: 1.5 em;
+    font-weight: 700;
+
+}
+
+.banner h3 {
+    font-size: 1.5em;
+    color: #38e9ae;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+.btn {
+    position: relative;
+    background-color: #38e9ae;
+    display: inline-block;
+    color: white;
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+.btn:hover {
+    background-color: #26a077;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+header.sticky {
+    background-color: white;
+    padding: 20px 100px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+header.sticky .logo {
+    color: #111;
+}
+
+header.sticky .logo:hover {
+    color: #26a077;
+}
+
+
+header .logo {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+header .logo:hover {
+    color: #26a077;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+}
+
+header ul li a {
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+}
+
+header ul li a:hover {
+    color: #26a077;
+}
+
+header.sticky ul li a {
+    color: black;
+}
+
+header.sticky ul li a:hover {
+    color: #26a077;
+}
+
+.heading {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #111;
+}
+
+.heading h2 {
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contentbox {
+    padding-right: 30px;
+}
+
+.contentbox h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.w50 {
+    min-width: 50%;
+}
+
+img {
+    max-width: 100%;
+}
+
+.w50 img {
+    transition: 1s;
+}
+
+.w50 img:hover {
+    transform: scale(1.1);
+}
+
+
+.services {
+    background-color: #111;
+}
+
+.heading.white {
+    color: #fff;
+}
+
+.services .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.services .content .servicebox {
+    padding: 40px 20px;
+    background-color: #222;
+    color: #fff;
+    max-width: 340px;
+    margin: 20px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.services .content .servicebox:hover {
+    background: #38e9ae;
+}
+
+.services .content .servicebox img {
+    max-width: 80px;
+    filter: invert(1);
+}
+
+.services .content .servicebox h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.work .content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.work .content .workbox {
+    width: 50%;
+    padding: 20px;
+}
+
+.work .content .workbox img {
+    max-width: 100%;
+    transition: 1s;
+}
+
+.work .content .workbox img:hover {
+    transform: scale(1.1);
+}
+
+.testimonial {
+    background-color: #f7f7f7;
+}
+
+.testimonial .content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.testimonial .content .testimonialbox {
+    max-width: calc(50% - 40px);
+    padding: 60px 40px;
+    margin: 20px;
+    background-color: #38e9ae;
+}
+
+.testimonial .content .testimonialbox:hover {
+    background-color: #22a77a;
+}
+
+.testimonial .content .testimonialbox p {
+    color: white;
+    font-style: italic;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.testimonial .content .testimonialbox h3 {
+    margin-top: 40px;
+    text-align: end;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1em;
+}
+
+.testimonial .content .testimonialbox h3 span {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.contact {
+    background-color: #111;
+}
+
+.formbox {
+    min-width: 60%;
+}
+
+.formbox form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formbox form h3,
+.contactinfo h3 {
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.formbox form input,
+.formbox form textarea {
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: #222;
+    color: white;
+    resize: none;
+}
+
+.formbox form textarea {
+    min-height: 200px;
+}
+
+.formbox form input::placeholder,
+.formbox form textarea::placeholder {
+    color: #999;
+}
+
+.formbox form input[type="submit"] {
+    max-width: 100px;
+    background-color: #38e9ae;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.formbox form input[type="submit"]:hover {
+    background-color: #22a77a;
+}
+
+.contactinfo {
+    min-width: 40%;
+}
+
+.contactinfobox {
+    position: relative;
+}
+
+.contactinfobox .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.contactinfobox .box .icon {
+    min-width: 40px;
+    padding-top: 4px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 24px;
+}
+
+.contactinfobox .box .text {
+    display: flex;
+    margin-left: 20px;
+    color: white;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.contactinfobox .box .text h3 {
+    font-weight: 500;
+    color: #38e9ae;
+    margin-bottom: 0;
+}
+
+
+.copyright {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding-top: 30px;
+    height: 85px;
+}
+
+.copyright i {
+    min-width: 20px;
+    color: white;
+}
+
+.copyright i:hover {
+    min-width: 20px;
+    color: #22a77a;
+}
+
+/* responsive */
+@media (max-width: 991px) {
+
+    header,
+    header.sticky {
+        padding: 20px 50px;
+        z-index: 1000;
+    }
+
+    .menu {
+        position: fixed;
+        top: 75px;
+        left: -100%;
+        display: block;
+        padding: 100px 50px;
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+        background-color: #fff;
+        transition: 0.5s;
+        z-index: 999;
+        border-top: 1px solid rgba(0, 0, 0, 0.2);
+    }
+
+    .menu.active {
+        left: 0;
+    }
+
+    header ul li a {
+        color: black;
+        margin: 10px;
+    }
+
+    header ul li a:hover {
+        color: #22a77a;
+    }
+
+    .toggle {
+        width: 40px;
+        height: 40px;
+        background-image: url(../assets/img/menu.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        cursor: pointer;
+    }
+
+    .toggle.active {
+        background-image: url(../assets/img/close.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 25px;
+        cursor: pointer;
+    }
+
+    header.sticky .toggle {
+        filter: invert(1);
+    }
+
+    section {
+        padding: 100px 50px;
+    }
+
+    .banner {
+        padding: 150px 50px 100px;
+    }
+
+    .banner h2 {
+        font-size: 1.5em;
+    }
+
+    .banner h3 {
+        font-size: 1em;
+    }
+
+    .btn {
+        margin-top: 10px;
+        padding-top: 10px 20px;
+        font-size: 16px;
+    }
+
+    .heading h2 {
+        font-size: 24px;
+    }
+
+    .contentbox h3 {
+        font-size: 20px;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .w50 {
+        margin-bottom: 20px;
+    }
+
+    .services .content .servicebox {
+        margin: 10px;
+    }
+
+    .work .content .workbox {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .testimonial .content .testimonialbox {
+        max-width: calc(100% - 20px);
+        padding: 40px 20px;
+        margin: 10px;
+        background-color: #38e9ae;
+    }
+
+    .testimonial .content .testimonialbox h3 {
+        margin-top: 20px;
+    }
+
+    .contactinfo {
+        margin: 20px 0;
+    }
+}
+
+@media(max-width:600px) {
+
+    header,
+    header.sticky {
+        padding: 20px 20px;
+    }
+
+    .banner {
+        padding: 150px 20px 100px;
+    }
+}
